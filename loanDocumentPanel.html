@@ -1,0 +1,58 @@
+<template>
+
+    <lightning-card title="Loan Documents" icon-name="standard:document">
+
+        <div class="slds-p-around_medium">
+
+            <template if:true={loanEnquiryId}>
+
+                <lightning-input label="Document Name" name="documentName" value={documentName} onchange={handleChange}
+                    required>
+                </lightning-input>
+
+                <lightning-combobox class="slds-m-top_small" label="Document Type" name="documentType"
+                    value={documentType} options={documentTypeOptions} onchange={handleChange} required>
+                </lightning-combobox>
+
+                <lightning-input class="slds-m-top_small" type="date" label="Uploaded Date" name="uploadedDate"
+                    value={uploadedDate} onchange={handleChange} required>
+                </lightning-input>
+
+                <lightning-button class="slds-m-top_medium" variant="brand" label="Add Document"
+                    onclick={handleAddDocument}>
+                </lightning-button>
+
+                <template if:true={documents.length}>
+
+                    <div class="slds-m-top_large">
+
+                        <lightning-datatable key-field="Id" data={documents} columns={columns} hide-checkbox-column>
+                        </lightning-datatable>
+
+                    </div>
+
+                </template>
+
+                <template if:false={documents.length}>
+
+                    <p class="slds-m-top_medium">
+                        No documents found.
+                    </p>
+
+                </template>
+
+            </template>
+
+            <template if:false={loanEnquiryId}>
+
+                <p>
+                    Create or select a Loan Enquiry first.
+                </p>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

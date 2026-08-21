@@ -379,4 +379,8 @@ force-app/
         ├── objects/
         ├── lightningMessageChannels/
         ├── permissionsets/
+<<<<<<< HEAD
         └── experiences/
+=======
+        └── experiences/
+>>>>>>> f2ffe3d375339c4c14052fcd9dfa424fbdc477ba
