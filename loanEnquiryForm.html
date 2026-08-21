@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Loan Enquiry" icon-name="standard:opportunity">
+        <div class="slds-p-around_medium">
+
+            <lightning-input label="Applicant Name" name="applicantName" value={applicantName} onchange={handleChange}
+                required>
+            </lightning-input>
+
+            <lightning-input class="slds-m-top_small" type="number" label="Loan Amount" name="loanAmount"
+                value={loanAmount} onchange={handleChange} required>
+            </lightning-input>
+
+            <lightning-combobox class="slds-m-top_small" label="Loan Purpose" name="loanPurpose" value={loanPurpose}
+                options={loanPurposeOptions} onchange={handleChange} required>
+            </lightning-combobox>
+
+            <lightning-button class="slds-m-top_medium" variant="brand" label="Create Loan Enquiry"
+                onclick={handleSave}>
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
