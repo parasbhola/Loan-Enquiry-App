@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<types>
+		<members>CreateLoanDocumentAction</members>
+		<members>CreateLoanRequestAction</members>
+		<members>CreateLoanRequestActionTest</members>
+		<members>GetExternalCheckAction</members>
+		<members>GetLoanDocumentsAction</members>
+		<members>GetLoanStatusAction</members>
+		<members>GetLoanStatusActionTest</members>
+		<members>LoanEnquiryController</members>
+		<members>LoanEnquiryControllerTest</members>
+		<members>LoanEnquiryTriggerHandler</members>
+		<members>LoanEnquiryTriggerHandlerTest</members>
+		<members>LoanExternalCheckQueueable</members>
+		<members>LoanExternalCheckQueueableTest</members>
+		<name>ApexClass</name>
+	</types>
+	
+	
+<version>67.0</version>
+</Package>

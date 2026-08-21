@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Loan Enquiry Selected</masterLabel>
+    <isExposed>true</isExposed>
+
+    <lightningMessageFields>
+        <fieldName>Loan_Enquiry_Id__c</fieldName>
+        <description>Loan Enquiry record Id</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Enquiry__c</fullName>
+    <label>Loan Enquiry</label>
+    <referenceTo>Loan_Enquiry__c</referenceTo>
+    <relationshipLabel>Loan Documents</relationshipLabel>
+    <relationshipName>Loan_Documents</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
